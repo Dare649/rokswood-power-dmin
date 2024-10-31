@@ -1,4 +1,9 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
-
-export default nextConfig;
+const nextConfig = {
+    images: {
+      domains: ['minio-api.apps.rokswood.com'],
+    },
+  };
+  
+  export default nextConfig;
+  
