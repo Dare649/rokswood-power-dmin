@@ -62,7 +62,21 @@ const AgentDetail = () => {
     };
 
     // Function to approve agent
-    const handleDeleteAgentReuest = async () => {
+const handleDeleteAgentRequest = async () => {
+    // Show confirmation prompt
+    const result = await Swal.fire({
+        title: 'Are you sure?',
+        text: "This action will permanently delete the agent request.",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Yes, delete it!',
+        cancelButtonText: 'Cancel',
+    });
+
+    // Check if the user confirmed the deletion
+    if (result.isConfirmed) {
         setLoading(true);
         try {
             const response = await axiosClient.delete(`/v1/manage/agents/requests/${id}`);
@@ -71,17 +85,18 @@ const AgentDetail = () => {
                 title: 'Success',
                 text: response.data.message
             });
-           
         } catch (error) {
             Swal.fire({
                 icon: 'error',
                 title: 'Error',
-                text: error.response.data.message,
+                text: error.response?.data?.message || 'An error occurred. Please try again.',
             });
         } finally {
             setLoading(false);
         }
-    };
+    }
+};
+
 
 
     if (loading) {
@@ -101,10 +116,10 @@ const AgentDetail = () => {
                 <button onClick={() => router.back()} className='text-primary1 capitalize font-bold'>back to agent requests </button>
                 {
                     agent.request.is_approved === false ? (
-                        <button onClick={handleApproveAgent} className='bg-primary1 text-white px-3 py-0 capitalize font-bold'>approve agent</button>
+                        <button onClick={handleApproveAgent} className='bg-primary1 text-white p-3 capitalize font-bold'>approve agent</button>
                     ):(null)
                 }
-                <button onClick={handleDeleteAgentReuest} className='bg-red-500 text-white px-3 py-0 capitalize font-bold'>delete agent request</button>
+                <button onClick={handleDeleteAgentReuest} className='bg-red-500 text-white p-3 capitalize font-bold'>delete agent request</button>
             </div>
             <div className='w-full flex flex-col'>
        
