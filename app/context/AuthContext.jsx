@@ -62,7 +62,7 @@ export const AuthProvider = ({ children }) => {
     // Sign-out function
     const signout = async () => {
         try {
-            await axiosClient.post("/v1/manage/auth/logout");
+            await axiosClient.delete("/v1/auth/logout");
 
             setToken(null);
             setUser(null);

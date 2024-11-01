@@ -231,10 +231,7 @@ const AgentDetail = () => {
                             <h4 className='text-primary1 capitalize font-medium'>Name</h4>
                             <h2 className='font-bold text-neutral2 capitalize'>{agent.user.name}</h2>
                         </div>
-                        <div className='my-2'>
-                            <h4 className='text-primary1 capitalize font-medium'>Email</h4>
-                            <h2 className='font-bold text-neutral2 capitalize'>{agent.user.email}</h2>
-                        </div>
+                        
                         <div className='my-2'>
                             <h4 className='text-primary1 capitalize font-medium'>Serial Number</h4>
                             <h2 className='font-bold text-neutral2 capitalize'>{agent.user.serial_number}</h2>
@@ -242,6 +239,10 @@ const AgentDetail = () => {
                         <div className='my-2'>
                             <h4 className='text-primary1 capitalize font-medium'>Status</h4>
                             <h2 className={`font-bold text-neutral2 capitalize ${agent.user.status === 'active' ? 'text-green1' : 'text-orange1'}`}>{agent.user.status}</h2>
+                        </div>
+                        <div className='my-2'>
+                            <h4 className='text-primary1 capitalize font-medium'>Email</h4>
+                            <h2 className='font-bold text-neutral2 capitalize'>{agent.user.email}</h2>
                         </div>
                     </div>
                 </div>
@@ -252,10 +253,7 @@ const AgentDetail = () => {
                             <h4 className='text-primary1 capitalize font-medium'>Name</h4>
                             <h2 className='font-bold text-neutral2 capitalize'>{agent.agent.name}</h2>
                         </div>
-                        <div className='my-2'>
-                            <h4 className='text-primary1 capitalize font-medium'>Email</h4>
-                            <h2 className='font-bold text-neutral2 capitalize'>{agent.agent.email}</h2>
-                        </div>
+                        
                         <div className='my-2'>
                             <h4 className='text-primary1 capitalize font-medium'>Phone Number</h4>
                             <h2 className='font-bold text-neutral2 capitalize'>{agent.agent.phone}</h2>
@@ -279,6 +277,10 @@ const AgentDetail = () => {
                         <div className='my-2'>
                             <h4 className='text-primary1 capitalize font-medium'>Status</h4>
                             <h2 className={`font-bold text-neutral2 capitalize ${agent.agent.status === 'completed' ? 'text-green1' : 'text-orange1'}`}>{agent.agent.status}</h2>
+                        </div>
+                        <div className='my-2'>
+                            <h4 className='text-primary1 capitalize font-medium'>Email</h4>
+                            <h2 className='font-bold text-neutral2 capitalize'>{agent.agent.email}</h2>
                         </div>
                     </div>
                     {/* Meters Distribution */}
