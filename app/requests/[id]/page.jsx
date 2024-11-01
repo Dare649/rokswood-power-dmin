@@ -119,7 +119,7 @@ const handleDeleteAgentRequest = async () => {
                         <button onClick={handleApproveAgent} className='bg-primary1 text-white p-3 capitalize font-bold'>approve agent</button>
                     ):(null)
                 }
-                <button onClick={handleDeleteAgentReuest} className='bg-red-500 text-white p-3 capitalize font-bold'>delete agent request</button>
+                <button onClick={handleDeleteAgentRequest} className='bg-red-500 text-white p-3 capitalize font-bold'>delete agent request</button>
             </div>
             <div className='w-full flex flex-col'>
        
