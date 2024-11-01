@@ -211,7 +211,7 @@ const AgentDetail = () => {
                 </div>
                 <div className='w-full py-5 border-b-2 border-neutral1'>
                     <h1 className='lg:text-xl sm:text-md font-bold uppercase'>Personal Details</h1>
-                    <div className='w-full grid lg:grid-cols-4 sm:grid-cols-2 items-center my-5 px-5 gap-5'>
+                    <div className='w-full grid lg:grid-cols-4 sm:grid-cols-2 items-center py-5 gap-5'>
                         <div className='my-2'>
                             {agent.user.image_url ? (
                                 <Image
