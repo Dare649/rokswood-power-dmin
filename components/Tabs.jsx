@@ -16,7 +16,7 @@ const Tabs = ({ content1, content2, content3, content4, title4, title1, title2, 
     };
 
     const handleTab4 = () => {
-        setActiveTab("tab3");
+        setActiveTab("tab4");
     };
 
     return (
@@ -48,14 +48,17 @@ const Tabs = ({ content1, content2, content3, content4, title4, title1, title2, 
                 </h1>
             </div>
             <div className="outlet mt-10 w-full">
-            {activeTab === "tab1" ? (
-                <div className="duration-500">{content1}</div>
-            ) : activeTab === "tab2" ? (
-                <div>{content2}</div>
-            ) : (
-                <div>{content3}</div>
-            )}
+                {activeTab === "tab1" ? (
+                    <div className="duration-500">{content1}</div>
+                ) : activeTab === "tab2" ? (
+                    <div>{content2}</div>
+                ) : activeTab === "tab3" ? (
+                    <div>{content3}</div>
+                ) : (
+                    <div>{content4}</div>
+                )}
             </div>
+
         </div>
     );
 };

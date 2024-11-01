@@ -96,7 +96,7 @@ const Requests = () => {
                             />
                         </div>
                         <button
-                            className=' font-bold text-primary1 px-2 py-0 capitalize'
+                            className=' font-bold text-primary1 text-center px-2 py-0 capitalize'
                             onClick={() => setApproved(true)} // Fetch approved requests
                         >
                             view approved request

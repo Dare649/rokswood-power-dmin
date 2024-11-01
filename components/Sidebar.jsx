@@ -47,7 +47,7 @@ const Sidebar = () => {
                     ))
                 }
                 <div 
-                    className='w-full p-3 fixed flex flex-row items-center gap-x-3 font-bold text-red-500 capitalize bottom-0'
+                    className='w-full p-3 fixed cursor-pointer flex flex-row items-center gap-x-3 font-bold text-red-500 capitalize bottom-0'
                     onClick={handleSignout}
                 >
                     <MdOutlineLogout size={25}/>

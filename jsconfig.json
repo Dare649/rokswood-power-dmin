@@ -1,18 +1,18 @@
-// {
-//   "compilerOptions": {
-//     "paths": {
-//       "@/*": ["./*"]
-//     }
-//   }
-// }
-
-
 {
   "compilerOptions": {
-    "baseUrl": ".",
     "paths": {
-      "@/*": ["*"]
+      "@/*": ["./*"]
     }
-  },
-  "include": ["app"]
+  }
 }
+
+
+// {
+//   "compilerOptions": {
+//     "baseUrl": ".",
+//     "paths": {
+//       "@/*": ["*"]
+//     }
+//   },
+//   "include": ["app"]
+// }
