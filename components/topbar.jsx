@@ -17,10 +17,10 @@ const Topbar = () => {
                         <Image
                             src={logo}
                             alt="Rokswood-Power"
-                            width={40} // replace with appropriate width
-                            height={40} // replace with appropriate height
+                            width={100} // replace with appropriate width
+                            height={100} // replace with appropriate height
                             priority
-                            className='w-10 h-10 rounded-full'
+                            className='w-12 h-12'
                         />
                         <div className='flex flex-row items-center gap-x-2'>
                             <div>
@@ -44,7 +44,8 @@ const Topbar = () => {
                                         alt="Default Avatar"
                                         width={40} // replace with appropriate width
                                         height={40} // replace with appropriate height
-                                        className='rounded-full'
+                                        priority
+                                        className='w-20 h-20 rounded-full'
                                     />
                                 )}
                             </div>

@@ -19,9 +19,9 @@ export const nav = [
         id: 2
     },
     {
-        title: 'agents requests',
+        title: 'agent requests',
         icon: <GrUserWorker size={25}/>,
-        path: '/agents-requests',
+        path: '/requests',
         id: 3
     },
     {
